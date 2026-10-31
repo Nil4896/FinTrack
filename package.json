@@ -1,0 +1,26 @@
+{
+  "name": "fintrack",
+  "version": "1.0.0",
+  "description": "Full-stack expense tracker (React + Node + MongoDB)",
+  "main": "index.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "cd expense-backend && npm start",
+    "client": "cd expense-frontend && npm start",
+    "install-all": "npm install && cd expense-backend && npm install && cd ../expense-frontend && npm install"
+  },
+  "keywords": [
+    "react",
+    "node",
+    "express",
+    "mongodb",
+    "fullstack",
+    "expense-tracker"
+  ],
+  "author": "Nil Patel",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^9.2.1"
+  }
+}
